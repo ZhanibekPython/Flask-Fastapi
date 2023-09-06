@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 5</title>
+</head>
+<body>
+<h1>Simple calculator</h1>
+    <form action='/task5' method="post">
+        <label for="n1"> Число :</label>
+        <input type="number" id='n1' name="n1" placeholder="Операнд 1" required><br>
+        <label for="n2"> Число :</label>
+        <input type="number" id='n2' name="n2" placeholder="Операнд 2" required><br>
+        <label for="oper"> Операция:</label>
+        <input type="text" id="oper" name="oper" placeholder="+\-*/" pattern="[+\-*/]" required><br>
+        <input type="submit" value="Вычислить">
+    </form>
+</body>
+</html>

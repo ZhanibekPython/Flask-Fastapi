@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+{{ super() }}
+<h2> Task 3 </h2>
+{% endblock %}
+</head>
+<body>
+{% block content %}
+{{ super() }}
+<p> Создать страницу, на которой будет форма для ввода логина<br>
+и пароля
+При нажатии на кнопку "Отправить" <br>будет произведена
+проверка соответствия логина и пароля <br>и переход на
+страницу приветствия пользователя или <br>страницу с
+ошибкой.
+ </p>
+<form action="/task3" method='post'>
+    {% with messages = get_flashed_messages(with_categories=True) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class='alert alert - ХХ category }}'>
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <input type="text" name="l" placeholder="Введите логин">
+    <input type="password" name="p" placeholder="Введите пароль">
+    <input type="submit" value="Отправить"
+</form>
+{% endblock %}
+</body>
+</html>

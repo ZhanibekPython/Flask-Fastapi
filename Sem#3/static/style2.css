@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #933;
+}
+
+h1 {
+    color: #007bff;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    background-color: #007bff; /* Синий фон */
+    color: #fff; /* Белый текст */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 4px; /* Скругляем углы */
+    cursor: pointer; /* Изменяем курсор при наведении */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Изменяем цвет при наведении */
+}

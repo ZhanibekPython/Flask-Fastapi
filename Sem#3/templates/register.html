@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }} {{ title }}
+{% endblock %}
+
+{% block content %}
+{{ super() }}
+    <div>
+        <form method='post' action="/register">
+            <br><label for="name"> Name </label><input type="text" id="name" name="name" required>
+            <br><label for="surname"> Surname </label><input type="text" id="surname" name="surname" required>
+            <br><label for="gender"> Gender </label><input type="text" id="gender" name="gender">
+            <br><label for="age"> Age </label><input type="number" id="age" name="age">
+            <br><label for="group"> Group </label><input type="text" id="group" name="group">
+            <br><label for="dep"> Department </label><input type="text" id="dep" name="dep">
+            <br><input type="submit" value="Отправить">
+        </form>
+    </div>
+{% endblock %}
